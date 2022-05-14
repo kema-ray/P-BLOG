@@ -1,4 +1,3 @@
-from turtle import title
 from . import db
 
 class User(db.Model):
@@ -11,9 +10,9 @@ class User(db.Model):
         return f'User {self.username}'
 
 class Blog(db.Model):
-    __tablename__="blogs"
+    __tablename__='blogs'
 
-    id = db.Column(db.Integer,primary_key=True)
+    id = db.Column(db.Integer,primary_key = True)
     title = db.Column(db.String(255),nullable = False)
     user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
     
