@@ -1,4 +1,11 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
 <title>{{ title }}</title>
 
-<p style="text-align: center; margin-top: 10%;">{{quote.quote}}</p>
-<p style="text-align: center;">{{quote.author}}</p>
+{% block content %}
+<div class="header">
+    <p>{{quote.quote}}</p>
+    <p>{{quote.author}}</p> 
+</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Oleo+Script+Swash+Caps&family=Ubuntu:ital,wght@1,300&display=swap');
+.header{
+    text-align: center;
+    margin-top: 95px;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+}
