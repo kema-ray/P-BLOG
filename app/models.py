@@ -1,4 +1,10 @@
 from . import db
+from werkzeug.security import generate_password_hash,check_password_hash
+
+class Quote:
+    def __init__(self,quote,author):
+        self.quote=quote
+        self.author=author
 
 class User(db.Model):
     __tablename__ = 'users'
